@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin-top: 20px;
+}
+header {
+    text-align: center;
+    background-color: rgb(70, 213, 206);
+    padding: 30px;
+}
+
+div {
+    margin-left: 100px;
+}
+table {
+    margin-top: 30px;
+    text-align: left;
+}
+
+tr td {
+    height: 30px;
+    width: 200px;
+}
+
+th {
+    background-color: aqua;
+}
+
+td {
+    background-color: aquamarine;
+}
