@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+/* CSS for nav  */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(89, 216, 245);
+    position: fixed;
+    width: 100%;
+    padding: 15px;
+    color: black;
+    text-shadow: 1px 1px 1px;
+    letter-spacing: 3px;
+}
+
+ul li {
+    display: inline;
+    font-size: large;
+    text-align: center;
+}
+
+ul li a {
+    color: black;
+    line-height: 1.5;
+    padding: 10px 10px 10px 10px;
+    padding-top: 10px;
+    text-shadow: none;
+    font-weight: bold;
+    border-radius: 6px;
+    color: white;
+}
+
+.timeline-section {
+    width: 100%;
+    height: 130vh;
+}
+
+@media (max-width: 600px) {
+    .container {
+        display: block;
+        padding: 0;
+    }
+
+    .container h1 {
+        padding: 5px;
+    }
+
+    ul li {
+        display: block;
+        background-color: rgb(63, 66, 66);
+        border: 0.5px solid ;
+        width: 100%;
+        padding-top: 20px;
+    }
+}
+
+/* CSS for home */
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(white, rgb(170, 206, 225));
+
+}
+
+section .home-text {
+    text-align: center;
+    justify-content: center;
+    padding-top: 400px;
+    letter-spacing: 2px;
+    line-height: 60px;
+}
+
+section .home-text h1 {
+    font-size: 40px;
+}
+
+/* @media (max-width: 600px) {
+    .home {
+        width: 100%;
+    } */
+
+/* CSS for Time line section  */
+
+.timeline-section {
+    width: 100%;
+    height: 130vh;
+}
+
+.timeline-section h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    padding-top: 20px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+    z-index: -1;
+}
+
+.timeline-container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    color: black;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+
+@keyframes movedown {
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.timeline-container:nth-child(1){
+    animation-delay: 0s;
+}
+
+.timeline-container:nth-child(2){
+    animation-delay: 1s;
+}
+
+.timeline-container:nth-child(3){
+    animation-delay: 3s;
+}
+
+.timeline-container:nth-child(4){
+    animation-delay: 4s;
+}
+
+.timeline-text-box {
+    padding: 20px 30px;
+    position: relative;
+    background-color: rgb(89, 216, 245);
+    border-radius: 16px;
+    font-size: 16px;    
+}
+
+.left-container {
+    left: 0;
+}
+.right-container {
+    left: 50%;
+}
+
+.timeline-container img {
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+
+.right-container img {
+    left: -20px;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+.timeline-text-box h2 {
+    font-weight: 600;
+}
+
+.timeline-text-box small {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid rgb(89, 216, 245);
+    right: -15px;
+}
+
+.right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid rgb(89, 216, 245);
+    left: -15px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .timeline {
+        margin: 50px auto;
+    }
+
+    .timeline::after {
+        left: 31px
+    }
+
+    .timeline-container {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+
+    .timeline-text-box {
+        font-size: 13px;
+    }
+
+    .timeline-text-box small {
+        margin-bottom: 10px;
+    }
+
+    .right-container {
+        left: 0;
+    }
+
+    .left-container img, .right-container img {
+        left: 10px;
+    }
+    .left-container-arrow, .right-container-arrow{
+        border-right: 15px solid #fff;
+        border-left: 0;
+        left: -15px;
+    }
+}
+
+/* CSS for resume section */
+
+.resume-section {
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(117, 178, 231);
+}
+
+.resume-section div {
+    margin: auto;
+    padding: 100px;
+    width: 500px;
+    text-align: center;
+    justify-content: center;
+}
+
+.resume-section div h1 {
+    padding-bottom: 60px;
+}
+
+.resume-section div a {
+    background-color: rgb(184, 219, 115);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+.resume-section div a:hover {
+    transform: scale(2);
+}
+
+@media screen and (max-width: 500px){
+    .resume-section {
+        display: inline;
+        width: 100%;
+        height: 40vh;
+    }
+}
+
+/* CSS for projects-section */
+.projects-section h1 {
+    padding-top: 30px;
+}
+
+.projects-section {
+    background-color: rgb(236, 221, 223);
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    justify-content: center;
+}
+
+.image-gallery {
+    display: flex;
+    margin: auto;
+    width: 800px;
+    padding-right: 50px;
+    overflow: auto;
+}
+
+figcaption {
+    padding: 10px;
+    font-style:italic
+}
+
+.image-gallery img {
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+}
+
+.image-gallery img:hover {
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    transition: 1s;
+}
+
+@media screen and (max-width: 800px) {
+    .image-gallery {
+        display: inline;
+        overflow-y: hidden;
+    }
+}
+
+
+/* CSS for footer */
+footer h3 {
+    font-style: normal;
+    overflow: auto;
+}
+
+footer div a img{
+    width: 30px;
+    margin: 5px;
+}
+footer {
+    text-align: center;
+    font-style: italic;
+    padding: 100px;
+    font-size: small;
+    color: white;
+    background-color: black;
+}
+
+
+
