@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+
+<body> 
+    <table id="myTable">
+        <tr>
+          <th></th>
+          <th>STUDENT</th>
+          <th>ADVISOR</th>
+          <th>AWARD <br>STATUS</th>
+          <th>SEMESTER</th>
+          <th>TYPE</th>
+          <th>BUDGET <br> #</th>
+          <th>PERCENTAGE</th>
+          <th>DELETE</th>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="checkbox" />
+            <br><br>
+            <img src="images/down.png" alt="arrow down">
+          </td>
+          <td>Student 1</td>
+          <td>Teacher 1</td>
+          <td>Approved</td>
+          <td>Fall</td>
+          <td>TA</td>
+          <td>12345</td>
+          <td>100%</td>
+          <td></td>
+        </tr>
+
+        <tr class="dropDownTextArea">
+          <td colspan="8">
+            Advisor:<br /><br />
+            Award Details<br />
+            Summer 1-2014(TA)<br />
+            Budget Number: <br />
+            Tuition Number: <br />
+            Comments:<br /><br /><br />
+            Award Status:<br /><br /><br />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="checkbox">
+            <br><br>
+            <img src="images/down.png" alt="arrow down">
+          </td>
+          <td>Student 2</td>
+          <td>Teacher 2</td>
+          <td>Approved</td>
+          <td>Fall</td>
+          <td>TA</td>
+          <td>23456</td>
+          <td>100%</td>
+          <td></td>
+        </tr>
+
+        <tr class="dropDownTextArea">
+          <td colspan="8">
+            Advisor:<br /><br />
+            Award Details<br />
+            Summer 1-2014(TA)<br />
+            Budget Number: <br />
+            Tuition Number: <br />
+            Comments:<br /><br /><br />
+            Award Status:<br /><br /><br />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="checkbox">
+            <br><br>
+            <img src="images/down.png" alt="arrow down">
+          </td>
+          <td>Student 3</td>
+          <td>Teacher 3</td>
+          <td>Approved</td>
+          <td>Fall</td>
+          <td>TA</td>
+          <td>34567</td>
+          <td>100%</td>
+          <td></td>
+        </tr>
+
+        <tr class="dropDownTextArea">
+          <td colspan="8">
+            Advisor:<br /><br />
+            Award Details<br />
+            Summer 1-2014(TA)<br />
+            Budget Number: <br />
+            Tuition Number: <br />
+            Comments:<br /><br /><br />
+            Award Status:<br /><br /><br />
+          </td>
+        </tr>
+    </table>
+      <br>
+
+      <div class="buttonClass">
+        <button class="specialButton" id="submitBtn">SUBMIT SELECTED AWARDS</button>
+        <button class="studentClass" id="addNewBtn">Add New Student</button>
+      </div>
+
+      <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+table {
+    border-collapse: collapse;
+    text-align: center;
+    font-weight: bold;
+    margin: 50px;
+    box-shadow: 2px 2px 2px;
+}
+
+td, th {
+    border: 1px solid green;
+    padding: 10px;
+}
+
+th {
+    background-color: rgb(134, 224, 134);
+}
+
+img {
+    width: 30px;
+}
+
+.buttonClass {
+    text-align: center;
+    width: 800px;
+    word-spacing: 50px;
+}
+
+.specialButton {
+    font-weight: bold;
+    padding: 10px;
+    color: rgb(245, 243, 240);
+}
+
+.studentClass {
+    background-color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+button {
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px;
+}
+
+.dropDownTextArea {
+    text-align: left;
+}
