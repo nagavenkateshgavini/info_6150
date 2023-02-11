@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Feedback</title>
+  <style>
+    label {	float: left;
+			width: 150px;}
+      #container{
+          width: 700px;
+          margin: auto;
+          background-color: beige;
+      } 
+      main{
+          padding: 50px;
+      }
+
+	  #table_div {
+		margin: auto;
+		width: 700px;
+		background-color: rgb(183, 234, 234);
+		padding: 50px;
+	  }
+
+	  #table_div table td{
+		padding: 5px;
+		border: 1px;
+	  }
+
+  </style>
+ </head>
+ <body>
+ <div id="container">
+	 
+	 <main>
+	 <h2>Feeback</h2>
+	 <h3>Love something? Hate something? Let us know!</h3>
+		 Note : Fields marked with an asterisk(*) are mandatory
+		 <br><br>
+		 <form id="details_form" method="post" novalidate>
+			<label>Title*:</label>
+			<input type="radio" name="title" id="miss" value="miss" required="required"/>Miss
+			<input type="radio" name="title" id="mr" value="mr" required="required"/>Mr.
+			<input type="radio" name="title" id="mrs" value="mrs" required="required"/>Mrs.
+			<div id="error_title" style="display: none; color: red">Please select the title</div>
+			<br><br>
+
+			<label for="firstName">First Name*:</label>
+			<input type="text" name="firstName" id="firstName" placeholder="First Name" />
+			<div id="error_firstName" style="display: none; color: red">Please write the first name</div>
+			<br><br>
+			
+
+			<label for="lastName">Last Name*:</label>
+			<input type="text" name="lastName" id="lastName" placeholder="Last Name" />
+			<div id="error_lastName" style="display: none; color: red">Please write the last name</div>
+			<br><br>
+			
+
+			<label for="emailId">Email Id*:</label>
+			<input type="text" name="emailId" id="emailId" placeholder="yourname@domain.com" />
+			<div id="error_emailId" style="display: none; color: red">Please submit the email with @northeastern.edu domain</div>
+			<br><br>
+			
+
+			<label for="phoneNumber">Phone Number*:</label>
+			<input type="text" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" />
+			<div id="error_phoneNumber" style="display: none; color: red">Please submit the valid phone number</div>
+			<br><br>
+
+			<label for="streetAddress1">Street Address 1*:</label>
+			<input type="text" name="streetAddress1" id="streetAddress1" placeholder="address" />
+			<div id="error_streetAddress1" style="display: none; color: red">Please enter the address</div>
+			<br><br>
+
+			<label for="streetAddress2">Street Address 2:</label>
+			<input type="text" name="streetAddress2" id="streetAddress2" placeholder="address" />
+			<br><br>
+
+			<label for="city">City*:</label>
+			<input type="text" name="city" id="city" placeholder="city" />
+			<div id="error_city" style="display: none; color: red">Please enter the valid city name</div>
+			<br><br>
+
+			<label for="state">State*:</label>
+			<input type="text" name="state" id="state" placeholder="state" />
+			<div id="error_state" style="display: none; color: red">Please enter the valid state name</div>
+			<br><br>
+			
+            <label for="zipcode">ZipCode*:</label>
+			<input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" />
+			<div id="error_zipcode" style="display: none; color: red">Please enter the valid zipcode</div>
+			<br><br>
+
+			<label for="drinks">Drinks*:</label>
+			<select id="mylist">
+				<option value="selectcard">--- Please choose a drink ---</option>
+				<option>Hot black tea</option>
+				<option>Cold Coffee</option>
+				<option>Lemon Iced Tea</option>
+				<option>Expresso</option>
+				<option>Latte</option>
+			</select>
+			<div id="error_mylist" style="display: none; color: red">Please select the drink</div>
+
+			<br><br>
+ 
+			<div style="display: none;" id="list_data">
+				<p>
+					<span id="insert_later"></span><span> - Large <input type="checkbox" id="drinkselect"></span>
+					<br>($1 extra)
+				</p>
+
+				<div id="additional_comm_sec" style="display: none;">
+					<label for="add_comments">Any additional customizations*:</label>
+					<textarea name="text" id="comments_drinksize" placeholder="Any additional customization" rows="2" cols="25"></textarea>
+					<div id="error_comments_drinksize" style="display: none; color: red">Please do not leave this empty</div>
+					<br><br>
+				</div>
+			</div>
+
+            <label for="socialmedia">How did you hear*:</label>
+			<input type='checkbox' name="source" value="facebook" /> Facebook
+            <input type='checkbox' name="source" value="google" /> Google
+            <input type='checkbox' name="source" value="yelp" /> Yelp 
+			<div id="error_source" style="display: none; color: red">Please select the source</div>
+			<br><br> 
+             
+			<label for="comments">Comments*:</label>
+			<textarea name="text" id="comments" placeholder="Your comments" rows="5" cols="25"></textarea>
+			<div id="error_comments" style="display: none; color: red">Please submit your comments</div>
+			<br><br>
+			<input type="Submit">
+			<input type="Reset">
+			<br><br>
+		 </form>
+	 </main>
+ </div>
+ <br><br>
+ <div id="table_div" style="display: none;">
+	<table id="table">
+		<tbody>
+			<tr>
+				<td>Title:</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>First Name:</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Last Name:</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Email Id:</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Phone Number:</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Street Address1:</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Street Address2:</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>City</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>State:</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>ZipCode:</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Drinks:</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>How did you hear:</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Comments:</td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+ <script src="script.js"></script>
+
+ </body>
+</html>
