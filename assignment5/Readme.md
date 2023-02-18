@@ -43,8 +43,8 @@ Users will be able to checkout from the platform itself and a digital ticket wil
 11. Form-Switch
 
 ### Team Details:
-1. Naga Venkatesh Gavini, 002705198
-2. Dinesh Yelchuri, 002760628
-3. Gvs sai sumanth, 002728890
-4. Nagendra, 002771584
-5. Dheeraj, 002709344
+1. Naga Venkatesh Gavini
+2. Dinesh Yelchuri
+3. Gvs sai sumanth
+4. Nagendra
+5. Dheeraj
