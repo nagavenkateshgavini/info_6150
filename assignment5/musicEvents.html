@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="music-styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Event Planning Website</title>
+</head>
+
+<body>
+    <nav id="nav" class="navbar navbar-expand-lg bg-muted navbar-dark py-3 fixed-top bgcolor">
+        <div class="container">
+            <a class="navbar-brand" href="#">Event <span class="text-warning">Rise</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Event Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Sports</a></li>
+                            <li><a class="dropdown-item" href="./techEvents.html">Technology</a></li>
+                            <li><a class="dropdown-item" href="./musicEvents.html">Music Concerts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">All Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner" data-bs-interval="500">
+            <div class="carousel-item active" data-bs-interval="1000">
+                <div class="image-wrapper"></div>
+                <img src="images/music-1.jpg" class="d-block w-100 img-back" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Get relished with Music</h5>
+                    <p>Do not stress about tickets, we are here</p>
+                    <p><a href="#music-events">Explore Music events</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="sec-section" id="music-events">
+        <div class="container">
+            <div class="row">
+                <div class="col p-1 p-sm-3 p-lg-5">
+                    <h1 class="text-center">Musical Concerts</h1>
+                </div>
+            </div>
+
+            <div class="row g-5 event-cards">
+                
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card hover-effect">
+                        <img src="images/music-thumb1.jpeg" alt="microphone" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title">Rap Tap</div>
+                            <p class="card-text">
+                                <b>RapTap</b> is an event organized in Newyork city with over 50000 attendees and a 24 hours of musical celebrations. Come along, be a part of our jounrney.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-custom">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card hover-effect">
+                        <img src="images/music-thumb2.jpeg" alt="microphone" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title">TomBlack Musical concert</div>
+                            <p class="card-text">
+                                <b>TomBlack</b> Musical concert is an event organized in Newyork city with over 50000 attendees and a 24 hours of musical celebrations. Come along, be a part of our jounrney.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-custom">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card hover-effect">
+                        <img src="images/music-thumb3.jpeg" alt="microphone" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title">Get together</div>
+                            <p class="card-text">
+                                <b> Best Trap Music Mix</b> is an event organized in Newyork city with over 50000 attendees and a 24 hours of musical celebrations. Come along, be a part of our jounrney.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-custom">Register Now</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card hover-effect">
+                        <img src="images/music-thumb4.webp" alt="microphone" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title">Speaker series</div>
+                            <p class="card-text">
+                                <b>Sunrise Music Mix </b>is an event organized in Newyork city with over 50000 attendees and a 24 hours of musical celebrations. Come along, be a part of our jounrney.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-custom">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card hover-effect">
+                        <img src="images/music-thumb5.webp" alt="microphone" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title">Music concert</div>
+                            <p class="card-text">
+                                <b>Weekend Jazz </b>is an event organized in Newyork city with over 50000 attendees and a 24 hours of musical celebrations. Come along, be a part of our jounrney.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-custom">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card hover-effect">
+                        <img src="images/music-thumb6.webp" alt="microphone" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title">Get together</div>
+                            <p class="card-text">
+                                <b>Night Vibes </b>is an event organized in Newyork city with over 50000 attendees and a 24 hours of musical celebrations. Come along, be a part of our jounrney.
+                            </p>
+                        </div>
+
+                        <div class="card-footer">
+                            <button class="btn btn-custom">Register Now</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+              <div class="card map-card">
+                <div class="row no-gutters">
+                  <div class="col-md-4 py-3">
+                    <div class="card p-3 h-100">
+                      <h1 class="text-center maps-head">Events location</h1>
+                      <p>The location provided is where all the listed events will take place.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-8 py-3">
+                    <div class="card p-3 h-100 d-flex align-items-center">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe
+                        style="height: 100%; width: 100%; border: 0"
+                        frameborder="0"
+                        src="https://www.google.com/maps/embed/v1/place?q=Northeastern+University,+Huntington+Avenue,+Boston,+MA,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                      ></iframe>                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+    </section>
+
+
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 mx-auto mt-3 brand">
+                    <h1 class="text-left"><a class="navbar-brand" href="#">Event <span
+                                class="text-warning">Rise</span></a></h1>
+                    <p class="text-left">EventRise is an American event management and ticketing website. The service
+                        allows users to browse, create, and promote local events. The service charges a fee to event
+                        organizers in exchange for online ticketing services, unless the event is free.
+                    </p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 mx-auto mt-3 products">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Products</h5>
+                        <p>Create Tickets</p>
+                        <p>Attend Events</p>
+                        <p>Share Tickets</p>
+                        <p>Browse Events</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 mx-auto mt-3 categories">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Categories</h5>
+                    <p>Sports</p>
+                    <p>Technology</p>
+                    <p>Music Concerts</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <small> Event Rise Copyright &copy; 2023 All Rights Reserved</small>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+    <script>
+        const myNav = document.getElementById('nav')
+
+        window.onscroll = function () {
+            if (window.scrollY > 60) {
+                myNav.classList.add('scrolled')
+            } else {
+                myNav.classList.remove('scrolled')
+            }
+        }
+    </script>
+</body>
+
+</html>

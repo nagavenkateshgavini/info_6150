@@ -5,88 +5,86 @@
 } */
 
 .bgcolor.scrolled {
-    background-color: black;
+  background-color: black;
 }
 
 .carousel-item {
-    height: 100vh;
-    min-height: 300px;
-    background: no-repeat center center scroll;
-    background-size: cover;
-
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  background-size: cover;
 }
 
 .carousel-caption {
-    margin-bottom: 450px;
-    z-index: 2;
+  margin-bottom: 450px;
+  z-index: 2;
 }
 
 .carousel-caption h5 {
-    font-size: 45px;
-    text-transform: capitalize;
-    letter-spacing: 2px;
-    margin-top: 25px;
-    color: rgb(233, 241, 241);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 45px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  margin-top: 25px;
+  color: rgb(233, 241, 241);
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .carousel-caption p {
-    width: 75%;
-    margin: auto;
-    font-size: 18px;
-    line-height: 1.9;
-    font-family: poppins;
+  width: 75%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+  font-family: poppins;
 }
 
 .carousel-caption a {
-    text-transform: uppercase;
-    background-color: #ebad4e;
-    padding: 10px 30px;
-    display: inline-block;
-    margin-top: 20px;
-    text-decoration: none;
-    border-radius: 20px;
-    color: black;
+  text-transform: uppercase;
+  background-color: #ebad4e;
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  color: black;
 }
 
 .w-100 {
-    height: 100vh;
+  height: 100vh;
 }
 
 .sec-section {
-    background-image: linear-gradient(white, rgb(30, 228, 209));
+  background-image: linear-gradient(white, rgb(30, 228, 209));
 }
 
 .btn-dark {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .card-title {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .card-text {
-    font-style: italic;
+  font-style: italic;
 }
 .summury-section {
-    background-image: linear-gradient(white, grey);
+  background-image: linear-gradient(white, grey);
 }
 
 .text-summury {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer .brand {
-    text-align: left;
+  text-align: left;
 }
 
 footer .products {
-    text-align: left;
+  text-align: left;
 }
 
 footer .categories {
-    text-align: left;
+  text-align: left;
 }
-
