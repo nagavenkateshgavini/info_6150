@@ -1,0 +1,23 @@
+body {
+  color: #0c0c0c;
+}
+
+.timer_btn {
+  border-radius: 10px;
+  cursor: pointer;
+  height: 25px;
+  width: 70px;
+}
+
+#time_container {
+  text-align: center;
+  border-radius: 25px;
+  padding: 25px;
+  margin-top: 200px;
+}
+
+#time_display {
+  font-size: 80px;
+  color: #18b26d;
+}
+

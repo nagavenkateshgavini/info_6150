@@ -1,0 +1,45 @@
+
+input {
+  color: #fafafa;
+  border: none;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: #2d2e36;
+}
+
+.btn {
+  background-color: #15d7ed;
+  color: #0a0707;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.error {
+  color: red;
+}
+
+.form {
+  display: flex;
+  width: 20rem;
+  margin: 0 auto;
+  padding: 1rem;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.math_buttons {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
