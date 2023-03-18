@@ -1,0 +1,12 @@
+{
+  "name": "assignment7_6150",
+  "version": "1.0.0",
+  "description": "Movies collection management site",
+  "main": "landing.js",
+  "scripts": {
+    "test": "echo \"testing....\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Naga Venkatesh Gavini..",
+  "license": "ISEC"
+}

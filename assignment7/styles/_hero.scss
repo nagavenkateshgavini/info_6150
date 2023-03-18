@@ -1,0 +1,52 @@
+$bubble_height: 150px;
+$bubble_width: 150px;
+
+@mixin position($for, $val) {
+  #{$for}: $val;
+}
+
+@mixin bubble {
+  background-color: $bubbleColor;
+  border-radius: 50%;
+  margin: 0 1rem;
+  position: absolute;
+  height: $bubble_height;
+  width: $bubble_width;
+}
+
+
+
+.container {
+  background-color: $primary_2;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: rgb(240, 234, 234);
+  border-radius: 20px;
+  height: 500px;
+  position: relative;
+  margin: 4rem auto;
+  max-width: 100vw;
+  overflow: hidden;
+  @extend %align-center;
+
+  @media screen and (max-width: 768px) {
+    max-width: 90vw;
+  }
+  &_header {
+    font-weight: 500;
+    color: rgb(242, 234, 234);
+  }
+  
+  &_bubble1 {
+    @include bubble;
+    @include position("top", -10px);
+    @include position("left", -40px);
+  }
+
+  &_bubble2 {
+    @include bubble;
+    @include position("bottom", -10px);
+    @include position("right", -50px);
+  }
+}
