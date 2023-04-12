@@ -1,0 +1,10 @@
+.login-form {
+    margin: auto;
+    background-color: aquamarine;
+    border: solid 1px;
+    padding: 20px;
+    width: 500px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}

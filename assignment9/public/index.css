@@ -1,0 +1,8 @@
+nav a {
+    text-decoration: none;
+    color: bisque;
+}
+
+nav a:hover {
+    color: yellow
+}

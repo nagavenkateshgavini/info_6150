@@ -11,6 +11,32 @@ const getUser = asyncHandler(async (req, res) => {
     res.status(200).json(users)
 })
 
+//@desc  login api
+//@route GET /user/login
+//@access public
+const Login = asyncHandler(async (req, res) => {
+    let findValue = await User.findOne(
+        {email: req.body.email}
+    );
+
+    if (!findValue){
+        return res.status(500).json({"message": "User Not Found !!"})
+    }
+
+    try{
+        if (await bcrypt.compare(req.body.password, findValue.password)){
+            return res.status(200).json({"message": "Success"})
+        }
+        else{
+            return res.status(500).json({"message": "Not allowed"})
+        }
+
+    }
+    catch{
+        return res.status(500).json({"message": "Not allowed"})
+    }
+})
+
 //@desc  create users
 //@route POST /user/create
 //@access public
@@ -133,4 +159,4 @@ const deleteUser = asyncHandler(async (req, res) => {
 
     })
 
-module.exports = { getUser, createUser, updateUser, deleteUser }
+module.exports = { getUser, createUser, updateUser, deleteUser, Login }
